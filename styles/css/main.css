@@ -1,0 +1,46 @@
+#news-grid {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  background: aqua; }
+  #news-grid .news-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 1rem;
+    background: burlywood; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  padding: 3rem;
+  height: 100%;
+  width: 100%;
+  background: salmon;
+  display: flex; }
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 1rem;
+  background: aliceblue; }
+
+/*# sourceMappingURL=main.css.map */

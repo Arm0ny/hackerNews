@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap')
 @import ./abstract/mixins.sass
 @import ./components/news-section.sass
 
@@ -11,12 +12,19 @@ body
   padding: 3rem
   height: 100%
   width: 100%
-  background: salmon
+  background-color: #343434
   display: flex
+  font-family: 'Montserrat', sans-serif
+
+h1
+  color: white
 
 main
   height: 100%
   width: 100%
   @include flex(column, flex-start, center, 1rem)
-  background: aliceblue
+
+@media screen and (max-width: 560px)
+  body
+    padding: 1rem
 

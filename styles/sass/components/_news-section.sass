@@ -5,9 +5,20 @@
   width: 100%
   @include flex(row, flex-start, flex-start, $gap: 3rem)
   flex-wrap: wrap
-  background: aqua
   .news-card
     width: 30rem
     padding: 2rem
-    @include flex(column, flex-start, $gap: 1rem)
-    background: burlywood
+    background: #f4f4f4
+    @include flex(column, center, flex-start, 1rem)
+    time
+      @include flex(row, flex-end, center)
+      font-size: .85rem
+    a
+      text-align: center
+      width: 30%
+      padding: 1rem
+      text-decoration: none
+      border: 1px solid blue
+      color: blue
+
+

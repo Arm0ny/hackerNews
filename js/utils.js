@@ -27,9 +27,9 @@ export function mapToCard(){
         return`<article class="news-card">
                 <header class="news-header">
                 <h2 class="news-title">${_.get(news, 'title', 'No title Found')}</h2>
-                <time datetime=${date} class="news-time"> ${date} </time>
             </header>
             <a href=${news.url}>Read More</a>
+            <time datetime=${date} class="news-time"> ${date} </time>
             </article>`
 
     }).join('')

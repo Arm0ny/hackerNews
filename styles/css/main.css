@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap");
 #news-grid {
   height: 100%;
   width: 100%;
@@ -6,17 +7,30 @@
   justify-content: flex-start;
   align-content: flex-start;
   gap: 3rem;
-  flex-wrap: wrap;
-  background: aqua; }
+  flex-wrap: wrap; }
   #news-grid .news-card {
     width: 30rem;
     padding: 2rem;
+    background: #f4f4f4;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-    gap: 1rem;
-    background: burlywood; }
+    justify-content: center;
+    align-content: flex-start;
+    gap: 1rem; }
+    #news-grid .news-card time {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-content: center;
+      gap: 0;
+      font-size: 0.85rem; }
+    #news-grid .news-card a {
+      text-align: center;
+      width: 30%;
+      padding: 1rem;
+      text-decoration: none;
+      border: 1px solid blue;
+      color: blue; }
 
 * {
   margin: 0;
@@ -27,8 +41,12 @@ body {
   padding: 3rem;
   height: 100%;
   width: 100%;
-  background: salmon;
-  display: flex; }
+  background-color: #343434;
+  display: flex;
+  font-family: "Montserrat", sans-serif; }
+
+h1 {
+  color: white; }
 
 main {
   height: 100%;
@@ -37,7 +55,10 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
-  gap: 1rem;
-  background: aliceblue; }
+  gap: 1rem; }
+
+@media screen and (max-width: 560px) {
+  body {
+    padding: 1rem; } }
 
 /*# sourceMappingURL=main.css.map */

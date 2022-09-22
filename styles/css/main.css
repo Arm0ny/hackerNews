@@ -31,6 +31,11 @@
       text-decoration: none;
       border: 1px solid blue;
       color: blue; }
+      #news-grid .news-card a:hover {
+        background: blue;
+        color: white;
+        transition: background, color;
+        transition-duration: 400ms; }
 
 * {
   margin: 0;
@@ -56,6 +61,18 @@ main {
   justify-content: flex-start;
   align-content: center;
   gap: 1rem; }
+  main button {
+    text-align: center;
+    width: 30%;
+    padding: 1rem;
+    border: solid 1px blue;
+    color: white;
+    background: transparent; }
+    main button:hover {
+      background: blue;
+      color: white;
+      transition: background;
+      transition-duration: 400ms; }
 
 @media screen and (max-width: 560px) {
   body {
